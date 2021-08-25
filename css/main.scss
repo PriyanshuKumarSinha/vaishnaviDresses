@@ -107,16 +107,9 @@ body {
   body {
     // font-size: 5px;
     nav {
-      //   div.logo {
-      //     #bigLogo {
-      //       // content: "";
-      //       display: none;
-      //     }
-      //     #smallLogo {
-      //       display: contents;
-      //       font-size: 1.5rem;
-      //     }
-      //   }
+      div.logo {
+        width: 150px;
+      }
       div.quickLinks {
         display: none;
       }
@@ -125,6 +118,9 @@ body {
       }
       div.searchBar {
         display: contents;
+        input {
+          width: 300px;
+        }
       }
       div.mainMenu,
       div.logo,
@@ -153,36 +149,51 @@ body {
     // font-size: 5px;
     nav {
       div.logo {
-        #bigLogo {
-          // content: "";
-          display: none;
-        }
-        #smallLogo {
-          display: contents;
-          font-size: 1.5rem;
-        }
-      }
-
-      div.quickLinks {
-        display: none;
-      }
-      div.ham {
-        display: contents;
+        width: 100px;
       }
       div.searchBar {
-        display: contents;
+        input {
+          width: 300px;
+        }
       }
-      //   div.mainMenu {
-      //     display: none;
+      //   div.searchBar {
+      //     display: flex;
+      //     align-items: center;
       //   }
     }
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   body {
     // font-size: 5px;
     nav {
-      padding: 1.2rem 1rem;
+      div.logo {
+        width: 100px;
+      }
+      div.logo {
+        span#bigLogo {
+          display: none;
+        }
+        span#smallLogo {
+          font-size: 20px;
+          display: block;
+        }
+      }
+      div.searchBar {
+        display: contents;
+        input {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  body {
+    font-size: 20px;
+    nav {
+      padding: 1rem 1rem;
       div.mainMenu,
       div.logo,
       div.ham,
@@ -191,9 +202,9 @@ body {
         align-items: center;
       }
       input {
-        padding: 0.5rem 0.5rem;
+        padding: 0.2rem 0.5rem;
         border-radius: 3px;
-        width: 180px;
+        width: 150px;
         height: 25px;
         background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
         padding-left: 30px;
@@ -201,10 +212,19 @@ body {
       #menuTagline {
         display: none;
       }
+      div.searchBar {
+        display: none;
+      }
+      div.logo {
+        width: 140px;
+      }
+      #hiddenSearchIcon {
+        display: contents;
+      }
     }
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   body {
     font-size: 20px;
     nav {
@@ -266,7 +286,7 @@ body {
         display: none;
       }
       div.logo {
-        width: 110px;
+        width: 100px;
       }
       #hiddenSearchIcon {
         display: contents;

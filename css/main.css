@@ -115,6 +115,9 @@ body nav #hiddenSearchIcon {
 }
 
 @media only screen and (max-width: 800px) {
+  body nav div.logo {
+    width: 150px;
+  }
   body nav div.quickLinks {
     display: none;
   }
@@ -123,6 +126,9 @@ body nav #hiddenSearchIcon {
   }
   body nav div.searchBar {
     display: contents;
+  }
+  body nav div.searchBar input {
+    width: 300px;
   }
   body nav div.mainMenu,
   body nav div.logo,
@@ -146,27 +152,39 @@ body nav #hiddenSearchIcon {
 }
 
 @media only screen and (max-width: 750px) {
-  body nav div.logo #bigLogo {
+  body nav div.logo {
+    width: 100px;
+  }
+  body nav div.searchBar input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body nav div.logo {
+    width: 100px;
+  }
+  body nav div.logo span#bigLogo {
     display: none;
   }
-  body nav div.logo #smallLogo {
-    display: contents;
-    font-size: 1.5rem;
-  }
-  body nav div.quickLinks {
-    display: none;
-  }
-  body nav div.ham {
-    display: contents;
+  body nav div.logo span#smallLogo {
+    font-size: 20px;
+    display: block;
   }
   body nav div.searchBar {
     display: contents;
   }
+  body nav div.searchBar input {
+    width: 230px;
+  }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
+  body {
+    font-size: 20px;
+  }
   body nav {
-    padding: 1.2rem 1rem;
+    padding: 1rem 1rem;
   }
   body nav div.mainMenu,
   body nav div.logo,
@@ -180,9 +198,9 @@ body nav #hiddenSearchIcon {
             align-items: center;
   }
   body nav input {
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 3px;
-    width: 180px;
+    width: 150px;
     height: 25px;
     background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
     padding-left: 30px;
@@ -190,9 +208,18 @@ body nav #hiddenSearchIcon {
   body nav #menuTagline {
     display: none;
   }
+  body nav div.searchBar {
+    display: none;
+  }
+  body nav div.logo {
+    width: 140px;
+  }
+  body nav #hiddenSearchIcon {
+    display: contents;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   body {
     font-size: 20px;
   }
@@ -262,7 +289,7 @@ body nav #hiddenSearchIcon {
     display: none;
   }
   body nav div.logo {
-    width: 110px;
+    width: 100px;
   }
   body nav #hiddenSearchIcon {
     display: contents;
