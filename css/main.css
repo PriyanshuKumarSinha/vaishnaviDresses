@@ -8,10 +8,13 @@
 }
 
 body {
+  position: relative;
   font-family: "Roboto";
 }
 
 body nav {
+  position: fixed;
+  width: 100%;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +51,11 @@ body nav input {
   border: solid 1px #cfcfcf;
   padding: 0.2rem 0.1rem;
   border-radius: 3px;
+  width: 200px;
+}
+
+body nav div.searchBar {
+  display: none;
 }
 
 body nav div.ham {
@@ -79,6 +87,9 @@ body nav div.ham {
   }
   body nav input {
     padding: 0.3rem;
+  }
+  body nav div.searchBar {
+    display: contents;
   }
   body nav div.ham {
     display: contents;

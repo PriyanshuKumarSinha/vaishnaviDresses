@@ -6,12 +6,15 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   font-family: "Roboto";
   //   font-family: "Poppins";
   * {
     // border: solid 1px black;
   }
   nav {
+    position: fixed;
+    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -37,7 +40,10 @@ body {
       border: solid 1px rgb(207, 207, 207);
       padding: 0.2rem 0.1rem;
       border-radius: 3px;
-      //   width: 200px;
+      width: 200px;
+    }
+    div.searchBar {
+      display: none;
     }
     div.ham {
       display: none;
@@ -83,6 +89,9 @@ body {
       }
       input {
         padding: 0.3rem;
+      }
+      div.searchBar {
+        display: contents;
       }
       div.ham {
         display: contents;
