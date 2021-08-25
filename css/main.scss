@@ -18,6 +18,9 @@ body {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+    a {
+      color: black;
+    }
     div.logo {
       font-weight: bold;
       #smallLogo {
@@ -164,33 +167,7 @@ body {
   body {
     // font-size: 5px;
     nav {
-      padding: 1rem 0.5rem;
-      div.mainMenu,
-      div.logo,
-      div.ham,
-      div.searchBar {
-        display: flex;
-        align-items: center;
-      }
-      input {
-        padding: 0.2rem 0.5rem;
-        border-radius: 3px;
-        width: 150px;
-        height: 25px;
-        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
-        padding-left: 30px;
-      }
-      #menuTagline {
-        display: none;
-      }
-    }
-  }
-}
-@media only screen and (max-width: 350px) {
-  body {
-    // font-size: 5px;
-    nav {
-      padding: 1rem 0.5rem;
+      padding: 1rem 1rem;
       div.mainMenu,
       div.logo,
       div.ham,
@@ -213,7 +190,42 @@ body {
         display: none;
       }
       div.logo {
-        width: 120px;
+        width: 140px;
+      }
+      #hiddenSearchIcon {
+        display: contents;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  body {
+    // font-size: 5px;
+    nav {
+      padding: 1rem 1rem;
+      div.mainMenu,
+      div.logo,
+      div.ham,
+      div.searchBar {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        width: 130px;
+        height: 25px;
+        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+        padding-left: 30px;
+      }
+      #menuTagline {
+        display: none;
+      }
+      div.searchBar {
+        display: none;
+      }
+      div.logo {
+        width: 110px;
       }
       #hiddenSearchIcon {
         display: contents;

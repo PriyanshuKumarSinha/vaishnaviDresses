@@ -24,6 +24,10 @@ body nav {
           justify-content: space-between;
 }
 
+body nav a {
+  color: black;
+}
+
 body nav div.logo {
   font-weight: bold;
 }
@@ -152,35 +156,7 @@ body nav #hiddenSearchIcon {
 
 @media only screen and (max-width: 400px) {
   body nav {
-    padding: 1rem 0.5rem;
-  }
-  body nav div.mainMenu,
-  body nav div.logo,
-  body nav div.ham,
-  body nav div.searchBar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body nav input {
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    width: 150px;
-    height: 25px;
-    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
-    padding-left: 30px;
-  }
-  body nav #menuTagline {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  body nav {
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
   }
   body nav div.mainMenu,
   body nav div.logo,
@@ -208,7 +184,44 @@ body nav #hiddenSearchIcon {
     display: none;
   }
   body nav div.logo {
-    width: 120px;
+    width: 140px;
+  }
+  body nav #hiddenSearchIcon {
+    display: contents;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body nav {
+    padding: 1rem 1rem;
+  }
+  body nav div.mainMenu,
+  body nav div.logo,
+  body nav div.ham,
+  body nav div.searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav input {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    width: 130px;
+    height: 25px;
+    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+    padding-left: 30px;
+  }
+  body nav #menuTagline {
+    display: none;
+  }
+  body nav div.searchBar {
+    display: none;
+  }
+  body nav div.logo {
+    width: 110px;
   }
   body nav #hiddenSearchIcon {
     display: contents;
