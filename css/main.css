@@ -71,36 +71,11 @@ body nav div.ham {
   body nav div.logo #smallLogo {
     display: contents;
   }
-  body nav div.ham {
-    display: contents;
-  }
-  body nav div.mainMenu {
+  body nav div.quickLinks {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  body nav div.logo #bigLogo {
-    display: none;
-  }
-  body nav div.logo #smallLogo {
-    display: contents;
-    font-size: 1.5rem;
-  }
-  body nav input {
-    padding: 0.3rem;
   }
   body nav div.searchBar {
     display: contents;
-  }
-  body nav div.ham {
-    display: contents;
-  }
-  body nav div.mainMenu {
-    display: none;
-  }
-  body nav div.quickLinks {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

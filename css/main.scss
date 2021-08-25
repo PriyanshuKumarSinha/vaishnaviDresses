@@ -66,44 +66,18 @@ body {
           display: contents;
         }
       }
-      div.ham {
-        display: contents;
-      }
-      div.mainMenu {
+      div.quickLinks {
         display: none;
       }
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  body {
-    // font-size: 5px;
-    nav {
-      div.logo {
-        #bigLogo {
-          // content: "";
-          display: none;
-        }
-        #smallLogo {
-          display: contents;
-          font-size: 1.5rem;
-        }
-      }
-      input {
-        padding: 0.3rem;
+      div.ham {
+        // display: contents;
       }
       div.searchBar {
         display: contents;
       }
-      div.ham {
-        display: contents;
-      }
-      div.mainMenu {
-        display: none;
-      }
-      div.quickLinks {
-        display: none;
-      }
+      //   div.mainMenu {
+      //     display: none;
+      //   }
     }
   }
 }
