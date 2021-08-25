@@ -53,10 +53,58 @@ body {
     #menuTagline {
       font-size: 0.5rem;
     }
+    #hiddenSearchIcon {
+      display: none;
+    }
   }
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    // font-size: 5px;
+    nav {
+      //   div.logo {
+      //     #bigLogo {
+      //       // content: "";
+      //       display: none;
+      //     }
+      //     #smallLogo {
+      //       display: contents;
+      //       font-size: 1.5rem;
+      //     }
+      //   }
+      div.quickLinks {
+        display: none;
+      }
+      div.ham {
+        display: contents;
+      }
+      div.searchBar {
+        display: contents;
+      }
+      div.mainMenu,
+      div.logo,
+      div.ham,
+      div.searchBar {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.5rem 0.5rem;
+        border-radius: 3px;
+        width: 180px;
+        height: 25px;
+        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+        padding-left: 30px;
+      }
+
+      //   div.mainMenu {
+      //     display: none;
+      //   }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
   body {
     // font-size: 5px;
     nav {
@@ -70,6 +118,7 @@ body {
           font-size: 1.5rem;
         }
       }
+
       div.quickLinks {
         display: none;
       }
@@ -98,15 +147,76 @@ body {
         align-items: center;
       }
       input {
-        padding: 0.2rem 0.5rem;
+        padding: 0.5rem 0.5rem;
         border-radius: 3px;
-        width: 200px;
+        width: 180px;
         height: 25px;
         background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
         padding-left: 30px;
       }
       #menuTagline {
         display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    // font-size: 5px;
+    nav {
+      padding: 1rem 0.5rem;
+      div.mainMenu,
+      div.logo,
+      div.ham,
+      div.searchBar {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        width: 150px;
+        height: 25px;
+        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+        padding-left: 30px;
+      }
+      #menuTagline {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 350px) {
+  body {
+    // font-size: 5px;
+    nav {
+      padding: 1rem 0.5rem;
+      div.mainMenu,
+      div.logo,
+      div.ham,
+      div.searchBar {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        width: 150px;
+        height: 25px;
+        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+        padding-left: 30px;
+      }
+      #menuTagline {
+        display: none;
+      }
+      div.searchBar {
+        display: none;
+      }
+      div.logo {
+        width: 120px;
+      }
+      #hiddenSearchIcon {
+        display: contents;
       }
     }
   }

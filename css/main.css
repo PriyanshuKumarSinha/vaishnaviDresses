@@ -68,7 +68,42 @@ body nav #menuTagline {
   font-size: 0.5rem;
 }
 
+body nav #hiddenSearchIcon {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
+  body nav div.quickLinks {
+    display: none;
+  }
+  body nav div.ham {
+    display: contents;
+  }
+  body nav div.searchBar {
+    display: contents;
+  }
+  body nav div.mainMenu,
+  body nav div.logo,
+  body nav div.ham,
+  body nav div.searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav input {
+    padding: 0.5rem 0.5rem;
+    border-radius: 3px;
+    width: 180px;
+    height: 25px;
+    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
   body nav div.logo #bigLogo {
     display: none;
   }
@@ -103,15 +138,80 @@ body nav #menuTagline {
             align-items: center;
   }
   body nav input {
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 3px;
-    width: 200px;
+    width: 180px;
     height: 25px;
     background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
     padding-left: 30px;
   }
   body nav #menuTagline {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body nav {
+    padding: 1rem 0.5rem;
+  }
+  body nav div.mainMenu,
+  body nav div.logo,
+  body nav div.ham,
+  body nav div.searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav input {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    width: 150px;
+    height: 25px;
+    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+    padding-left: 30px;
+  }
+  body nav #menuTagline {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body nav {
+    padding: 1rem 0.5rem;
+  }
+  body nav div.mainMenu,
+  body nav div.logo,
+  body nav div.ham,
+  body nav div.searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav input {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    width: 150px;
+    height: 25px;
+    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+    padding-left: 30px;
+  }
+  body nav #menuTagline {
+    display: none;
+  }
+  body nav div.searchBar {
+    display: none;
+  }
+  body nav div.logo {
+    width: 120px;
+  }
+  body nav #hiddenSearchIcon {
+    display: contents;
   }
 }
 /*# sourceMappingURL=main.css.map */
