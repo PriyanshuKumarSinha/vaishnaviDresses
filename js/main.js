@@ -35,10 +35,14 @@ function adjustMMColor() {
 }
 
 function showMenu() {
+    mobileMenu.id = 'doAnimation'
+
     mainMenuContainer.style.display = 'block';
     mobileMenu.style.display = ""
+
 }
 function hideMenu() {
+    // mobileMenu.style.animation = "mobileMenuAnimation 10s  linear 2s reverse"
     mainMenuContainer.style.display = 'none';
     mobileMenu.style.display = 'none';
     // crossIcon.style.display = 'none';

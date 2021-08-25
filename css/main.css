@@ -20,6 +20,11 @@ body div.mainMenuContainer {
   display: none;
 }
 
+body div#doAnimation {
+  -webkit-animation: mobileMenuAnimation 300ms linear 0s 1;
+          animation: mobileMenuAnimation 300ms linear 0s 1;
+}
+
 body div.mobileMenu {
   background-color: white;
   font-size: 1rem;
@@ -37,7 +42,7 @@ body div.mobileMenu ul li {
 }
 
 body div.mobileMenu ul li#offer {
-  padding: 15px 0px;
+  padding: 0px 0px;
 }
 
 body div.mobileMenu a {
@@ -261,6 +266,24 @@ body nav #hiddenSearchIcon {
   }
   body nav #hiddenSearchIcon {
     display: contents;
+  }
+}
+
+@-webkit-keyframes mobileMenuAnimation {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes mobileMenuAnimation {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
