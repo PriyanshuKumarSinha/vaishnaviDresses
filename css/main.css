@@ -49,9 +49,11 @@ body nav a {
 
 body nav input {
   border: solid 1px #cfcfcf;
-  padding: 0.2rem 0.1rem;
+  padding: 0.2rem 1rem;
   border-radius: 3px;
   width: 200px;
+  background: url(/img/icons8-search-18.png) no-repeat scroll 5px 2px;
+  padding-left: 30px;
 }
 
 body nav div.searchBar {
