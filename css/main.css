@@ -36,7 +36,7 @@ body div#doAnimation {
 
 body div.mobileMenu {
   background-color: white;
-  font-size: 1rem;
+  font-size: 0.8em;
   position: absolute;
   width: 80%;
 }
@@ -46,7 +46,7 @@ body div.mobileMenu ul {
 }
 
 body div.mobileMenu ul li {
-  padding: 1rem 1rem;
+  padding: 0.8rem 1.5rem;
 }
 
 body div.mobileMenu ul li#offer {
