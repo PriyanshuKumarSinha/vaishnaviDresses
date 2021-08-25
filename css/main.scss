@@ -9,6 +9,39 @@ body {
   position: relative;
   font-family: "Roboto";
   //   font-family: "Poppins";
+  div.mainMenuContainer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(99, 95, 95, 0.459);
+    display: none;
+  }
+  div.mobileMenu {
+    // display: none;
+
+    background-color: white;
+
+    font-size: 1rem;
+    // border: solid 1px black;
+    position: absolute;
+    // top: 4rem;
+    // left: 1rem;
+    width: 80%;
+    ul {
+      list-style: none;
+      li {
+        padding: 1rem 1rem;
+        border: solid 1px rgba(202, 202, 202, 0.555);
+      }
+      li#offer {
+        padding: 15px 0px;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
   * {
     // border: solid 1px black;
   }
@@ -20,6 +53,9 @@ body {
     justify-content: space-between;
     a {
       color: black;
+    }
+    #crossIcon {
+      //   display: none;
     }
     div.logo {
       font-weight: bold;
