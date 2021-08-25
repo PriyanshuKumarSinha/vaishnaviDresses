@@ -155,6 +155,9 @@ body nav #hiddenSearchIcon {
 }
 
 @media only screen and (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
   body nav {
     padding: 1rem 1rem;
   }
