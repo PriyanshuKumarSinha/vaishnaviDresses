@@ -50,6 +50,9 @@ body {
     div.ham {
       display: none;
     }
+    #menuTagline {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -64,13 +67,14 @@ body {
         }
         #smallLogo {
           display: contents;
+          font-size: 1.5rem;
         }
       }
       div.quickLinks {
         display: none;
       }
       div.ham {
-        // display: contents;
+        display: contents;
       }
       div.searchBar {
         display: contents;
@@ -78,6 +82,32 @@ body {
       //   div.mainMenu {
       //     display: none;
       //   }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    // font-size: 5px;
+    nav {
+      padding: 1.2rem 1rem;
+      div.mainMenu,
+      div.logo,
+      div.ham,
+      div.searchBar {
+        display: flex;
+        align-items: center;
+      }
+      input {
+        padding: 0.2rem 0.5rem;
+        border-radius: 3px;
+        width: 200px;
+        height: 25px;
+        background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+        padding-left: 30px;
+      }
+      #menuTagline {
+        display: none;
+      }
     }
   }
 }

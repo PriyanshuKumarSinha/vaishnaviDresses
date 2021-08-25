@@ -64,18 +64,54 @@ body nav div.ham {
   display: none;
 }
 
+body nav #menuTagline {
+  font-size: 0.5rem;
+}
+
 @media only screen and (max-width: 800px) {
   body nav div.logo #bigLogo {
     display: none;
   }
   body nav div.logo #smallLogo {
     display: contents;
+    font-size: 1.5rem;
   }
   body nav div.quickLinks {
     display: none;
   }
+  body nav div.ham {
+    display: contents;
+  }
   body nav div.searchBar {
     display: contents;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body nav {
+    padding: 1.2rem 1rem;
+  }
+  body nav div.mainMenu,
+  body nav div.logo,
+  body nav div.ham,
+  body nav div.searchBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav input {
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    width: 200px;
+    height: 25px;
+    background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
+    padding-left: 30px;
+  }
+  body nav #menuTagline {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
