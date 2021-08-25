@@ -9,6 +9,13 @@ body {
   position: relative;
   font-family: "Roboto";
   //   font-family: "Poppins";
+  div.ham {
+    width: 30px;
+    text-align: center;
+    i {
+      margin: auto;
+    }
+  }
   div.mainMenuContainer {
     position: absolute;
     width: 100%;
@@ -236,6 +243,7 @@ body {
         display: flex;
         align-items: center;
       }
+
       input {
         padding: 0.2rem 0.5rem;
         border-radius: 3px;

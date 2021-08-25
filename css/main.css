@@ -12,6 +12,15 @@ body {
   font-family: "Roboto";
 }
 
+body div.ham {
+  width: 30px;
+  text-align: center;
+}
+
+body div.ham i {
+  margin: auto;
+}
+
 body div.mainMenuContainer {
   position: absolute;
   width: 100%;
