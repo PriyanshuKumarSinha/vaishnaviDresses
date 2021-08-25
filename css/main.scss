@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  //   font-family: "Poppins";
+  * {
+    // border: solid 1px black;
+  }
+  nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    div.logo {
+      font-weight: bold;
+      #smallLogo {
+        display: none;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        padding: 0 0.5rem;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+    div.quickLinks {
+    }
+    input {
+      border: solid 1px rgb(207, 207, 207);
+      padding: 0.2rem 0.1rem;
+      border-radius: 3px;
+      //   width: 200px;
+    }
+    div.ham {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    // font-size: 5px;
+    nav {
+      div.logo {
+        #bigLogo {
+          // content: "";
+          display: none;
+        }
+        #smallLogo {
+          display: contents;
+        }
+      }
+      div.ham {
+        display: contents;
+      }
+      div.mainMenu {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    // font-size: 5px;
+    nav {
+      div.logo {
+        #bigLogo {
+          // content: "";
+          display: none;
+        }
+        #smallLogo {
+          display: contents;
+          font-size: 1.5rem;
+        }
+      }
+      input {
+        padding: 0.3rem;
+      }
+      div.ham {
+        display: contents;
+      }
+      div.mainMenu {
+        display: none;
+      }
+      div.quickLinks {
+        display: none;
+      }
+    }
+  }
+}
