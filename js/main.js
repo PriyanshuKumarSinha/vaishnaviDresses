@@ -3,11 +3,7 @@ let mainMenuContainer = document.getElementsByClassName('mainMenuContainer')[0];
 let mobileMenu = document.getElementsByClassName('mobileMenu')[0];
 
 
-var body = document.body,
-    html = document.documentElement;
 
-var height = Math.max(body.scrollHeight, body.offsetHeight,
-    html.clientHeight, html.scrollHeight, html.offsetHeight);
 
 hamIcon.onclick = showMenu;
 window.onscroll = adjustMMColor;
@@ -25,12 +21,16 @@ function checkPosition() {
 
 
 function temp() {
-    console.log('temp')
     return true;
 }
 
 
 function adjustMMColor() {
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
     mainMenuContainer.style.height = height + 'px';
 }
 
@@ -47,5 +47,4 @@ function hideMenu() {
     mobileMenu.style.display = 'none';
     // crossIcon.style.display = 'none';
     // hamIcon.style.display = "contents";
-    console.log('n')
 }
