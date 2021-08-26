@@ -54,20 +54,18 @@ body {
       color: black;
     }
   }
-  * {
-    // border: solid 1px black;
-  }
+
   nav {
+    box-shadow: 5px 4px 12px 0 rgba(241, 241, 241, 0.623);
+    background-color: #fff;
     position: fixed;
     width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+
     a {
       color: black;
-    }
-    #crossIcon {
-      //   display: none;
     }
     div.logo {
       font-weight: bold;
@@ -85,8 +83,7 @@ body {
     a {
       text-decoration: none;
     }
-    div.quickLinks {
-    }
+
     input {
       border: solid 1px rgb(207, 207, 207);
       padding: 0.2rem 1rem;
@@ -106,6 +103,12 @@ body {
     }
     #hiddenSearchIcon {
       display: none;
+    }
+    div.mainMenu,
+    div.logo,
+    div.quickLinks {
+      display: flex;
+      align-items: center;
     }
   }
 }

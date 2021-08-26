@@ -59,6 +59,9 @@ body div.mobileMenu a {
 }
 
 body nav {
+  -webkit-box-shadow: 5px 4px 12px 0 rgba(241, 241, 241, 0.623);
+          box-shadow: 5px 4px 12px 0 rgba(241, 241, 241, 0.623);
+  background-color: #fff;
   position: fixed;
   width: 100%;
   padding: 2rem;
@@ -120,6 +123,17 @@ body nav #menuTagline {
 
 body nav #hiddenSearchIcon {
   display: none;
+}
+
+body nav div.mainMenu,
+body nav div.logo,
+body nav div.quickLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
