@@ -151,17 +151,36 @@ body div.sliderContainer img {
 }
 
 body div.quickLinksSlider {
+  width: 100%;
+  height: 100%;
   border: solid 1px black;
   overflow: hidden;
   height: 5rem;
 }
 
-body .f-ContentSlider {
+body div.quickLinksSlider div.f-ContentSlider {
+  width: 100%;
+  height: 100%;
+  padding-right: 17px;
+  /* Increase/decrease this value for cross-browser compatibility */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* So the width will be 100% + 17px */
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
   padding-left: 10px;
   scroll-behavior: smooth;
+}
+
+body div.quickLinksSlider div.f-ContentSlider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.quickLinksSlider div.f-ContentSlider::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 800px) {

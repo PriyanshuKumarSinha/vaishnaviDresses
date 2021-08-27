@@ -143,6 +143,9 @@ body {
         display: flex;
       }
     }
+    div.f-ContentSlider::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 
