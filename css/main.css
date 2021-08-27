@@ -148,11 +148,11 @@ body div.sliderContainer a {
 
 body div.sliderContainer img {
   border-radius: 50%;
-  width: 55px;
+  width: 60px;
 }
 
 body div.sliderContainer div.imageName {
-  font-size: 0.55rem;
+  font-size: 0.6rem;
 }
 
 body div.quickLinksSlider {
