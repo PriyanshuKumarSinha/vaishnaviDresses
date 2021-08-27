@@ -209,6 +209,8 @@ body div.offersSlider {
 
 body div.offersSlider div.image {
   padding: 10px 0;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
 }
 
 body div.offersSlider div.image img {
@@ -218,8 +220,8 @@ body div.offersSlider div.image img {
 
 body div.offersSlider div.sliderButtons button {
   border-radius: 50%;
-  height: 0.5rem;
-  width: 0.5rem;
+  height: 0.7rem;
+  width: 0.7rem;
   border: solid 0px gray;
   background-color: #e4e4e4;
   margin: 0.3rem;
@@ -455,6 +457,42 @@ body div.offersSlider div.sliderButtons button:focus {
   }
   to {
     left: 0px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

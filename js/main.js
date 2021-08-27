@@ -68,7 +68,10 @@ changeImage();
 
 
 function changeImage() {
-    offerSliderImage.src = `./img/${offerImagesName[imageNumber]}`;
+    document.querySelector('.image').innerHTML = `
+            <img src="./img/${offerImagesName[imageNumber]}" id='offerSliderImage' alt="" style = "animation : fadeIn 3s, fadeOut 3s linear 5s">
+    `
+    // offerSliderImage.src = `./img/${offerImagesName[imageNumber]}`;
     for (let i = 0; i < offerImagesName.length; i++) {
         document.getElementById(String(i)).style.backgroundColor = 'rgb(228, 228, 228)';
     }
