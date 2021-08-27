@@ -102,7 +102,7 @@ function buttonClicked(id) {
 
 let offerImages = document.querySelector('.offersSlider').querySelector('img')
 
-document.querySelector('.image').addEventListener('mousedown', function () {
+document.querySelector('.image').addEventListener('touches', function () {
     console.log('h')
-    document.querySelector('.temp').innerHTML += 'mouseDown<br>'
+    document.querySelector('.temp').innerHTML += 'touched<br>'
 })
