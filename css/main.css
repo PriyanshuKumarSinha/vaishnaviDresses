@@ -136,6 +136,25 @@ body nav div.quickLinks {
           align-items: center;
 }
 
+body div.sliderContainer {
+  padding-top: 7rem;
+  display: none;
+}
+
+body div.quickLinksSlider {
+  border: solid 1px black;
+  overflow: hidden;
+  height: 5rem;
+}
+
+body .f-ContentSlider {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+  scroll-behavior: smooth;
+}
+
 @media only screen and (max-width: 800px) {
   body nav div.logo {
     width: 150px;
@@ -171,6 +190,9 @@ body nav div.quickLinks {
     background: url(/img/icons8-search-18.png) no-repeat scroll 5px 4px;
     padding-left: 30px;
   }
+  body div.sliderContainer {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -198,6 +220,12 @@ body nav div.quickLinks {
   }
   body nav div.searchBar input {
     width: 230px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body div.sliderContainer {
+    padding-top: 8rem;
   }
 }
 
@@ -238,6 +266,9 @@ body nav div.quickLinks {
   }
   body nav #hiddenSearchIcon {
     display: contents;
+  }
+  body div.sliderContainer {
+    padding-top: 4.2rem;
   }
 }
 

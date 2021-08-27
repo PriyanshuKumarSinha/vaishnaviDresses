@@ -111,6 +111,22 @@ body {
       align-items: center;
     }
   }
+  div.sliderContainer {
+    padding-top: 7rem;
+    display: none;
+  }
+  div.quickLinksSlider {
+    border: solid 1px black;
+    overflow: hidden;
+    height: 5rem;
+  }
+  .f-ContentSlider {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 10px;
+    scroll-behavior: smooth;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -151,6 +167,9 @@ body {
       //   div.mainMenu {
       //     display: none;
       //   }
+    }
+    div.sliderContainer {
+      display: block;
     }
   }
 }
@@ -198,7 +217,13 @@ body {
     }
   }
 }
-
+@media only screen and (max-width: 600px) {
+  body {
+    div.sliderContainer {
+      padding-top: 8rem;
+    }
+  }
+}
 @media only screen and (max-width: 580px) {
   body {
     font-size: 20px;
@@ -231,6 +256,9 @@ body {
       #hiddenSearchIcon {
         display: contents;
       }
+    }
+    div.sliderContainer {
+      padding-top: 4.2rem;
     }
   }
 }
