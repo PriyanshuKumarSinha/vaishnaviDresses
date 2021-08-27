@@ -189,6 +189,10 @@ body {
     div.sliderButtons button:hover {
       background-color: rgb(184, 184, 184);
     }
+    div.sliderButtons button:focus {
+      border: solid 0px gray;
+      background-color: rgb(184, 184, 184);
+    }
   }
 }
 

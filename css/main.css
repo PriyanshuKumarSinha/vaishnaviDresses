@@ -229,6 +229,11 @@ body div.offersSlider div.sliderButtons button:hover {
   background-color: #b8b8b8;
 }
 
+body div.offersSlider div.sliderButtons button:focus {
+  border: solid 0px gray;
+  background-color: #b8b8b8;
+}
+
 @media only screen and (max-width: 800px) {
   body nav div.logo {
     width: 150px;

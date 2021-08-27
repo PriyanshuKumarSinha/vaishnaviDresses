@@ -69,13 +69,10 @@ changeImage();
 
 function changeImage() {
     offerSliderImage.src = `./img/${offerImagesName[imageNumber]}`;
+    for (let i = 0; i < offerImagesName.length; i++) {
+        document.getElementById(String(i)).style.backgroundColor = 'rgb(228, 228, 228)';
+    }
     document.getElementById(String(imageNumber)).style.backgroundColor = 'rgb(184, 184, 184)';
-    if (imageNumber >= 1) {
-        document.getElementById(String(imageNumber - 1)).style.backgroundColor = 'rgb(228, 228, 228)';
-    }
-    else {
-        document.getElementById(String(offerImagesName.length - 1)).style.backgroundColor = 'rgb(228, 228, 228)';
-    }
 
     if (imageNumber < offerImagesName.length - 1) {
         imageNumber += 1;
@@ -96,8 +93,6 @@ function buttonClicked(id) {
     imageNumber = parseInt(id);
     changeImage();
 
-    for (let i = 0; i < offerImagesName.length; i++) {
-        document.getElementById(String(i)).style.backgroundColor = 'rgb(228, 228, 228)';
-    }
+
     // console.log(id);
 }
