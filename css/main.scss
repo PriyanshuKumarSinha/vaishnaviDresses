@@ -150,6 +150,9 @@ body {
         li {
           padding: 0 10px;
         }
+        li:last-child {
+          padding-right: 50px;
+        }
       }
       div#img {
         img {

@@ -189,6 +189,10 @@ body div.quickLinksSlider div.f-ContentSlider ul li {
   padding: 0 10px;
 }
 
+body div.quickLinksSlider div.f-ContentSlider ul li:last-child {
+  padding-right: 50px;
+}
+
 body div.quickLinksSlider div.f-ContentSlider div#img img {
   width: 20px;
 }
