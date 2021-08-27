@@ -69,7 +69,7 @@ changeImage();
 
 function changeImage() {
     document.querySelector('.image').innerHTML = `
-            <img src="./img/${offerImagesName[imageNumber]}" id='offerSliderImage' alt="" style = "animation : fadeIn 3s, fadeOut 3s linear 5s">
+            <img src="./img/${offerImagesName[imageNumber]}" id='offerSliderImage' alt="" style = "animation : fadeIn 1.5s, fadeOut 1.5s linear 6.5s">
     `
     // offerSliderImage.src = `./img/${offerImagesName[imageNumber]}`;
     for (let i = 0; i < offerImagesName.length; i++) {
@@ -99,3 +99,9 @@ function buttonClicked(id) {
 
     // console.log(id);
 }
+
+let offerImages = document.querySelector('.offersSlider').querySelector('img')
+
+document.querySelector('.image').addEventListener('mouseDown', function () {
+    document.querySelector('.temp').innerText += 'mouseDown'
+})
