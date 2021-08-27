@@ -141,6 +141,15 @@ body div.sliderContainer {
   display: none;
 }
 
+body div.sliderContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+body div.sliderContainer img {
+  border-radius: 50%;
+}
+
 body div.quickLinksSlider {
   border: solid 1px black;
   overflow: hidden;
