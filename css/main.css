@@ -201,6 +201,34 @@ body div.quickLinksSlider div.f-ContentSlider::-webkit-scrollbar {
   display: none;
 }
 
+body div.offersSlider {
+  width: 100%;
+  text-align: center;
+  padding-top: 7.5rem;
+}
+
+body div.offersSlider div.image {
+  padding: 10px 0;
+}
+
+body div.offersSlider div.image img {
+  width: 100%;
+  height: 400px;
+}
+
+body div.offersSlider div.sliderButtons button {
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  border: solid 0px gray;
+  background-color: #e4e4e4;
+  margin: 0.3rem;
+}
+
+body div.offersSlider div.sliderButtons button:hover {
+  background-color: #b8b8b8;
+}
+
 @media only screen and (max-width: 800px) {
   body nav div.logo {
     width: 150px;
@@ -238,6 +266,18 @@ body div.quickLinksSlider div.f-ContentSlider::-webkit-scrollbar {
   }
   body div.sliderContainer {
     display: block;
+  }
+  body div.offersSlider {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+  body div.offersSlider div.image {
+    padding: 10px;
+  }
+  body div.offersSlider div.image img {
+    width: 95%;
+    height: 300px;
   }
 }
 
