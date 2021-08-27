@@ -94,9 +94,10 @@ setInterval(changeImage, 8000);
 
 function buttonClicked(id) {
     imageNumber = parseInt(id);
+    changeImage();
+
     for (let i = 0; i < offerImagesName.length; i++) {
         document.getElementById(String(i)).style.backgroundColor = 'rgb(228, 228, 228)';
     }
-    changeImage();
     // console.log(id);
 }
