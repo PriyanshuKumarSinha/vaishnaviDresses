@@ -184,6 +184,8 @@ body div.quickLinksSlider div.f-ContentSlider ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body div.quickLinksSlider div.f-ContentSlider ul li {
@@ -242,6 +244,10 @@ body div.dealOfTheDay {
   margin: 1.5rem 0;
 }
 
+body div.content {
+  padding: 0 2.5rem;
+}
+
 body div.content div.contentSliderContainer {
   padding: 1.2rem 0;
 }
@@ -254,7 +260,6 @@ body div.content div.contentSliderContainer img {
 body div.content div.contentSliderContainer div.mainSlider {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider {
@@ -265,11 +270,6 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   /* So the width will be 100% + 17px */
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  padding-left: 10px;
-  scroll-behavior: smooth;
   text-align: center;
 }
 
@@ -278,10 +278,14 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li {
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
@@ -333,24 +337,25 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categories img {
   border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categoryName {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {
   display: none;
 }
 
-.heading {
-  padding: 1.3rem;
-  font-size: 1rem;
+body .heading {
+  padding: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  background-color: white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -430,6 +435,110 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-w
   }
   body nav div.searchBar input {
     width: 230px;
+  }
+  body div.dealOfTheDay {
+    background-color: #fafafa;
+    margin: 1.5rem 0;
+  }
+  body div.content {
+    padding: 0;
+  }
+  body div.content div.contentSliderContainer {
+    padding: 1.2rem 0;
+  }
+  body div.content div.contentSliderContainer img {
+    width: 15rem;
+    height: 20rem;
+  }
+  body div.content div.contentSliderContainer div.mainSlider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider {
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    /* Increase/decrease this value for cross-browser compatibility */
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    /* So the width will be 100% + 17px */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 10px;
+    scroll-behavior: smooth;
+    text-align: center;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li {
+    padding: 0 10px;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
+    padding-right: 50px;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
+    background-color: #fffefe;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.img {
+    padding: 0.15rem;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details {
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.2rem;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productName {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 700;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesv {
+    font-size: 0.8rem;
+    color: #757575;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.discountedPrice {
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.originalPrice {
+    font-size: 0.8rem;
+    color: #adacac;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.percentageOff,
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price span.percentageOff {
+    font-size: 0.75rem;
+    color: #e45b5b;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categories img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categoryName {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {
+    display: none;
+  }
+  body .heading {
+    padding: 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
 

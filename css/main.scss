@@ -148,6 +148,7 @@ body {
       ul {
         display: flex;
         list-style: none;
+        flex-wrap: nowrap;
         li {
           padding: 0 10px;
         }
@@ -202,6 +203,7 @@ body {
     margin: 1.5rem 0;
   }
   div.content {
+    padding: 0 2.5rem;
     div.contentSliderContainer {
       padding: 1.2rem 0;
       img {
@@ -212,24 +214,26 @@ body {
         width: 100%;
         height: 100%;
         // border: solid 1px black;
-        overflow: hidden;
+        // overflow: hidden;
         // height: 5rem;
         div.contentSlider {
           width: 100%;
           height: 100%;
           padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
           box-sizing: content-box; /* So the width will be 100% + 17px */
-          overflow-x: scroll;
-          overflow-y: hidden;
-          white-space: nowrap;
-          padding-left: 10px;
-          scroll-behavior: smooth;
+          // overflow-x: scroll;
+          // overflow-y: hidden;
+          // white-space: wrap;
+          // padding-left: 10px;
+          // scroll-behavior: smooth;
           text-align: center;
           ul {
             display: flex;
             list-style: none;
+            flex-wrap: wrap;
+            justify-content: space-around;
             li {
-              padding: 0 10px;
+              padding: 10px 10px;
             }
             li:last-child {
               padding-right: 50px;
@@ -276,14 +280,14 @@ body {
             div.categories {
               img {
                 border-radius: 50%;
-                width: 8rem;
-                height: 8rem;
+                width: 12rem;
+                height: 12rem;
               }
             }
             div.categoryName {
               font-family: "Times New Roman", Times, serif;
               font-weight: 500;
-              font-size: 1rem;
+              font-size: 1.3rem;
             }
           }
         }
@@ -293,13 +297,15 @@ body {
       }
     }
   }
+  .heading {
+    // width: 80%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: white;
+  }
 }
-.heading {
-  // width: 80%;
-  padding: 1.3rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
+
 @media only screen and (max-width: 800px) {
   body {
     // font-size: 5px;
@@ -397,6 +403,112 @@ body {
           width: 230px;
         }
       }
+    }
+    div.dealOfTheDay {
+      background-color: rgb(250, 250, 250);
+      margin: 1.5rem 0;
+    }
+    div.content {
+      padding: 0;
+
+      div.contentSliderContainer {
+        padding: 1.2rem 0;
+        img {
+          width: 15rem;
+          height: 20rem;
+        }
+        div.mainSlider {
+          width: 100%;
+          height: 100%;
+          // border: solid 1px black;
+          overflow: hidden;
+          // height: 5rem;
+          div.contentSlider {
+            width: 100%;
+            height: 100%;
+            padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+            box-sizing: content-box; /* So the width will be 100% + 17px */
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding-left: 10px;
+            scroll-behavior: smooth;
+            text-align: center;
+            ul {
+              display: flex;
+              list-style: none;
+              flex-wrap: nowrap;
+              justify-content: unset;
+              li {
+                padding: 0 10px;
+              }
+              li:last-child {
+                padding-right: 50px;
+              }
+              div.product {
+                background-color: rgb(255, 254, 254);
+              }
+              div.img {
+                padding: 0.15rem;
+              }
+              div.details {
+                text-align: left;
+                padding-left: 0.5rem;
+                padding-bottom: 0.5rem;
+                line-height: 1.2rem;
+                div.about {
+                  div.productName {
+                    font-size: 0.8rem;
+                    color: black;
+                    font-weight: 700;
+                  }
+                  div.productDesv {
+                    font-size: 0.8rem;
+                    color: rgb(117, 117, 117);
+                  }
+                }
+                div.price {
+                  div.discountedPrice {
+                    font-size: 0.8rem;
+                    color: black;
+                    font-weight: 500;
+                  }
+                  div.originalPrice {
+                    font-size: 0.8rem;
+                    color: rgb(173, 172, 172);
+                  }
+                  div.percentageOff,
+                  span.percentageOff {
+                    font-size: 0.75rem;
+                    color: rgb(228, 91, 91);
+                  }
+                }
+              }
+              div.categories {
+                img {
+                  border-radius: 50%;
+                  width: 8rem;
+                  height: 8rem;
+                }
+              }
+              div.categoryName {
+                font-family: "Times New Roman", Times, serif;
+                font-weight: 500;
+                font-size: 1rem;
+              }
+            }
+          }
+          div.contentSlider::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    }
+    .heading {
+      // width: 80%;
+      padding: 1.3rem;
+      font-size: 1rem;
+      font-weight: bold;
     }
   }
 }
