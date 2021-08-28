@@ -172,5 +172,6 @@ otherCategories.forEach(function (element) {
 })
 
 function changeMobileMenuTop() {
-    document.querySelector('.mobileMenu').style.top = window.pageYOffset
+    document.querySelector('.mobileMenu').style.top = window.pageYOffset + 'px';
 }
+document.onscroll = changeMobileMenuTop;
