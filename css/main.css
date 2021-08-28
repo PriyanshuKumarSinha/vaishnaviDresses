@@ -767,7 +767,7 @@ body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlide
     width: 100%;
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
-    padding-right: 50px;
+    padding-right: 0px;
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
     background-color: #fffefe;
