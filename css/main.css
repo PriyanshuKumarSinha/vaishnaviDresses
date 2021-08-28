@@ -735,8 +735,8 @@ body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlide
     padding: 1.2rem 0;
   }
   body div.ourFavourite div.contentSliderContainer img {
-    width: 15rem;
-    height: 20rem;
+    width: 85%;
+    height: auto;
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider {
     width: 100%;
@@ -780,6 +780,8 @@ body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlide
     padding-left: 0.8rem;
     padding-bottom: 0.5rem;
     line-height: 1.2rem;
+    width: 85%;
+    margin: auto;
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productName {
     font-size: 0.9rem;
@@ -806,7 +808,7 @@ body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlide
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.categories img {
     border-radius: 50%;
-    width: 12rem;
+    width: 14rem;
     height: 12rem;
   }
   body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.categoryName {

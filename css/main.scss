@@ -682,8 +682,8 @@ body {
       div.contentSliderContainer {
         padding: 1.2rem 0;
         img {
-          width: 15rem;
-          height: 20rem;
+          width: 85%;
+          height: auto;
         }
         div.mainSlider {
           width: 100%;
@@ -719,6 +719,8 @@ body {
                 padding-left: 0.8rem;
                 padding-bottom: 0.5rem;
                 line-height: 1.2rem;
+                width: 85%;
+                margin: auto;
                 div.about {
                   div.productName {
                     font-size: 0.9rem;
@@ -750,7 +752,7 @@ body {
               div.categories {
                 img {
                   border-radius: 50%;
-                  width: 12rem;
+                  width: 14rem;
                   height: 12rem;
                 }
               }
