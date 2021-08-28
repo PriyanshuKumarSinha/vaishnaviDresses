@@ -461,6 +461,10 @@ body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlide
   font-size: 1.3rem;
 }
 
+body .submenu {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   body nav div.logo {
     width: 150px;

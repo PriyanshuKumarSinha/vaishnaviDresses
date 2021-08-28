@@ -9,9 +9,14 @@ hamIcon.onclick = showMenu;
 window.onscroll = adjustMMColor;
 
 mainMenuContainer.onclick = checkPosition;
+mobileMenu.addEventListener('click', temp)
+
+let isClickedInside = false;
+
 function checkPosition() {
 
-    if (mobileMenu.addEventListener('click', temp)) {
+    if (isClickedInside) {
+        isClickedInside = false;
         //do nothing
     }
     else {
@@ -21,7 +26,7 @@ function checkPosition() {
 
 
 function temp() {
-    return true;
+    isClickedInside = true;
 }
 
 
@@ -171,3 +176,8 @@ otherCategories.forEach(function (element) {
                             </li>
 `
 })
+
+function dropdownMobile(id) {
+    document.querySelector('.submenu').style.display = 'none';
+    document.querySelector("." + String(id) + "SubMenu").style.display = 'block';
+}
