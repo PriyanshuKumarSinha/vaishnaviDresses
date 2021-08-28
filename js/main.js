@@ -170,3 +170,7 @@ otherCategories.forEach(function (element) {
                             </li>
 `
 })
+
+function changeMobileMenuTop() {
+    document.querySelector('.mobileMenu').style.top = window.pageYOffset
+}

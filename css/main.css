@@ -39,6 +39,7 @@ body div.mobileMenu {
   background-color: white;
   font-size: 0.8em;
   position: absolute;
+  top: 0rem;
   width: 80%;
 }
 
