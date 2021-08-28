@@ -535,6 +535,10 @@ body .heading {
   body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {
     display: none;
   }
+  body div.ourFavourite ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   body .heading {
     padding: 1.3rem;
     font-size: 1rem;

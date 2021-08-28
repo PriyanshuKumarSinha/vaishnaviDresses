@@ -504,6 +504,11 @@ body {
         }
       }
     }
+    div.ourFavourite {
+      ul {
+        flex-wrap: wrap;
+      }
+    }
     .heading {
       // width: 80%;
       padding: 1.3rem;
