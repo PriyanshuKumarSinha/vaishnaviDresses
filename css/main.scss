@@ -22,6 +22,7 @@ body {
     height: 100vh;
     background-color: rgba(99, 95, 95, 0.459);
     display: none;
+    z-index: 2;
   }
   div#doAnimation {
     animation: mobileMenuAnimation 300ms linear 0s 1;
@@ -182,11 +183,11 @@ body {
     }
     div.sliderButtons button {
       border-radius: 50%;
-      height: 0.7rem;
-      width: 0.7rem;
+      height: 0.55rem;
+      width: 0.55rem;
       border: solid 0px gray;
       background-color: rgb(228, 228, 228);
-      margin: 0.3rem;
+      margin: 0 0.3rem;
     }
     div.sliderButtons button:hover {
       background-color: rgb(184, 184, 184);
@@ -196,8 +197,53 @@ body {
       background-color: rgb(184, 184, 184);
     }
   }
+  div.content {
+    div.contentSliderContainer {
+      img {
+        width: 12rem;
+        height: 15rem;
+      }
+      div.mainSlider {
+        width: 100%;
+        height: 100%;
+        // border: solid 1px black;
+        overflow: hidden;
+        // height: 5rem;
+        div.contentSlider {
+          width: 100%;
+          height: 100%;
+          padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+          box-sizing: content-box; /* So the width will be 100% + 17px */
+          overflow-x: scroll;
+          overflow-y: hidden;
+          white-space: nowrap;
+          padding-left: 10px;
+          scroll-behavior: smooth;
+          text-align: center;
+          ul {
+            display: flex;
+            list-style: none;
+            li {
+              padding: 0 10px;
+            }
+            li:last-child {
+              padding-right: 50px;
+            }
+          }
+        }
+        div.contentSlider::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
 }
-
+.heading {
+  // width: 80%;
+  padding: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
 @media only screen and (max-width: 800px) {
   body {
     // font-size: 5px;

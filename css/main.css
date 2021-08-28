@@ -27,6 +27,7 @@ body div.mainMenuContainer {
   height: 100vh;
   background-color: rgba(99, 95, 95, 0.459);
   display: none;
+  z-index: 2;
 }
 
 body div#doAnimation {
@@ -220,11 +221,11 @@ body div.offersSlider div.image img {
 
 body div.offersSlider div.sliderButtons button {
   border-radius: 50%;
-  height: 0.7rem;
-  width: 0.7rem;
+  height: 0.55rem;
+  width: 0.55rem;
   border: solid 0px gray;
   background-color: #e4e4e4;
-  margin: 0.3rem;
+  margin: 0 0.3rem;
 }
 
 body div.offersSlider div.sliderButtons button:hover {
@@ -234,6 +235,58 @@ body div.offersSlider div.sliderButtons button:hover {
 body div.offersSlider div.sliderButtons button:focus {
   border: solid 0px gray;
   background-color: #b8b8b8;
+}
+
+body div.content div.contentSliderContainer img {
+  width: 12rem;
+  height: 15rem;
+}
+
+body div.content div.contentSliderContainer div.mainSlider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider {
+  width: 100%;
+  height: 100%;
+  padding-right: 17px;
+  /* Increase/decrease this value for cross-browser compatibility */
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* So the width will be 100% + 17px */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-left: 10px;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li {
+  padding: 0 10px;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
+  padding-right: 50px;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {
+  display: none;
+}
+
+.heading {
+  padding: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {

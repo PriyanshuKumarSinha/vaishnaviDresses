@@ -99,10 +99,3 @@ function buttonClicked(id) {
 
     // console.log(id);
 }
-
-let offerImages = document.querySelector('.offersSlider').querySelector('img')
-
-document.querySelector('.image').addEventListener('touchstart', function () {
-    console.log('h')
-    document.querySelector('.temp').innerHTML += 'touched<br>'
-})
