@@ -313,7 +313,7 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
   font-weight: 700;
 }
 
-body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesv {
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesc {
   font-size: 0.8rem;
   color: #757575;
 }
@@ -356,6 +356,109 @@ body .heading {
   font-size: 1.6rem;
   font-weight: bold;
   background-color: white;
+}
+
+body div.ourFavourite {
+  padding: 0 2.5rem;
+}
+
+body div.ourFavourite div.contentSliderContainer {
+  padding: 1.2rem 0;
+}
+
+body div.ourFavourite div.contentSliderContainer img {
+  width: 15rem;
+  height: 20rem;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider {
+  width: 100%;
+  height: 100%;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-align: center;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul li {
+  padding: 10px 10px;
+  padding-bottom: 1rem;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
+  padding-right: 50px;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
+  background-color: #fffefe;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.img {
+  padding: 0.15rem;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details {
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productName {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 700;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesc {
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.discountedPrice {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 500;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.originalPrice {
+  font-size: 0.8rem;
+  color: #adacac;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.percentageOff,
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price span.percentageOff {
+  font-size: 0.75rem;
+  color: #e45b5b;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.categories img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+}
+
+body div.ourFavourite div.contentSliderContainer div.mainSlider div.contentSlider ul div.categoryName {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 800px) {
@@ -500,7 +603,7 @@ body .heading {
     color: black;
     font-weight: 700;
   }
-  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesv {
+  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesc {
     font-size: 0.8rem;
     color: #757575;
   }
