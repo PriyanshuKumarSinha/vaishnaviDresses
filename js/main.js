@@ -103,9 +103,11 @@ function buttonClicked(id) {
 let categoriesInMen = ['Shirt', 'Tshirt', 'Trousers'];
 let categoriesInWomen = ['Saree', 'Shirt', 'Tshirt', 'Trousers'];
 let categoriesInKids = ['Shirt', 'Tshirt', 'Trousers'];
+let otherCategories = ['Shirt', 'Tshirt', 'Trousers'];
 let categoriesInMenDiv = document.querySelector('.categoriesInMen').querySelector('ul');
 let categoriesInWomenDiv = document.querySelector('.categoriesInWomen').querySelector('ul');
 let categoriesInKidsDiv = document.querySelector('.categoriesInKids').querySelector('ul');
+let otherCategoriesDiv = document.querySelector('.otherCartegories').querySelector('ul');
 
 
 categoriesInMen.forEach(function (element) {
@@ -140,6 +142,21 @@ categoriesInWomen.forEach(function (element) {
 })
 categoriesInKids.forEach(function (element) {
     categoriesInKidsDiv.innerHTML += `
+                            <li>
+                                <div class="categories">
+                                <!--
+                                    <img src="./img/${element}.png" alt="">
+                                -->
+                                    <img src="./img/offerImage.png" alt="">
+                                </div>
+                                <div class="categoryName">
+                                    ${element}
+                                </div>
+                            </li>
+`
+})
+otherCategories.forEach(function (element) {
+    otherCategoriesDiv.innerHTML += `
                             <li>
                                 <div class="categories">
                                 <!--
