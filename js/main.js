@@ -35,6 +35,7 @@ function adjustMMColor() {
 }
 
 function showMenu() {
+    window.scroll(0, 0)
     mobileMenu.id = 'doAnimation'
 
     mainMenuContainer.style.display = 'block';
@@ -170,8 +171,3 @@ otherCategories.forEach(function (element) {
                             </li>
 `
 })
-
-function changeMobileMenuTop() {
-    document.querySelector('.mobileMenu').style.top = window.pageYOffset + 'px';
-}
-document.onscroll = changeMobileMenuTop;
