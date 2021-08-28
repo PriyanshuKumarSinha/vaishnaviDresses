@@ -198,7 +198,7 @@ body {
     }
   }
   div.dealOfTheDay {
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(247, 245, 245);
     margin: 1.5rem 0;
   }
   div.content {
@@ -235,7 +235,7 @@ body {
               padding-right: 50px;
             }
             div.product {
-              background-color: rgb(247, 247, 247);
+              background-color: rgb(255, 254, 254);
             }
             div.img {
               padding: 0.15rem;
@@ -272,6 +272,18 @@ body {
                   color: rgb(228, 91, 91);
                 }
               }
+            }
+            div.categories {
+              img {
+                border-radius: 50%;
+                width: 8rem;
+                height: 8rem;
+              }
+            }
+            div.categoryName {
+              font-family: "Times New Roman", Times, serif;
+              font-weight: 500;
+              font-size: 1rem;
             }
           }
         }

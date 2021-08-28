@@ -99,3 +99,57 @@ function buttonClicked(id) {
 
     // console.log(id);
 }
+
+let categoriesInMen = ['Shirt', 'Tshirt', 'Trousers'];
+let categoriesInWomen = ['Saree', 'Shirt', 'Tshirt', 'Trousers'];
+let categoriesInKids = ['Shirt', 'Tshirt', 'Trousers'];
+let categoriesInMenDiv = document.querySelector('.categoriesInMen').querySelector('ul');
+let categoriesInWomenDiv = document.querySelector('.categoriesInWomen').querySelector('ul');
+let categoriesInKidsDiv = document.querySelector('.categoriesInKids').querySelector('ul');
+
+
+categoriesInMen.forEach(function (element) {
+    categoriesInMenDiv.innerHTML += `
+                            <li>
+                                <div class="categories">
+                                <!--
+                                    <img src="./img/${element}.png" alt="">
+                                -->
+                                    <img src="./img/offerImage.png" alt="">
+                                </div>
+                                <div class="categoryName">
+                                    ${element}
+                                </div>
+                            </li>
+`
+})
+categoriesInWomen.forEach(function (element) {
+    categoriesInWomenDiv.innerHTML += `
+                            <li>
+                                <div class="categories">
+                                <!--
+                                    <img src="./img/${element}.png" alt="">
+                                -->
+                                    <img src="./img/offerImage.png" alt="">
+                                </div>
+                                <div class="categoryName">
+                                    ${element}
+                                </div>
+                            </li>
+`
+})
+categoriesInKids.forEach(function (element) {
+    categoriesInKidsDiv.innerHTML += `
+                            <li>
+                                <div class="categories">
+                                <!--
+                                    <img src="./img/${element}.png" alt="">
+                                -->
+                                    <img src="./img/offerImage.png" alt="">
+                                </div>
+                                <div class="categoryName">
+                                    ${element}
+                                </div>
+                            </li>
+`
+})

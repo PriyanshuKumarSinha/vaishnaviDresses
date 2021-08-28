@@ -238,7 +238,7 @@ body div.offersSlider div.sliderButtons button:focus {
 }
 
 body div.dealOfTheDay {
-  background-color: #ececec;
+  background-color: #f7f5f5;
   margin: 1.5rem 0;
 }
 
@@ -289,7 +289,7 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
-  background-color: #f7f7f7;
+  background-color: #fffefe;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.img {
@@ -329,6 +329,18 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price span.percentageOff {
   font-size: 0.75rem;
   color: #e45b5b;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categories img {
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.categoryName {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {
