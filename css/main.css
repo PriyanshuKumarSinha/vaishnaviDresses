@@ -405,7 +405,7 @@ body .heading {
     padding: 10px;
   }
   body div.offersSlider div.image img {
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -488,9 +488,6 @@ body .heading {
   }
   body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
     background-color: #fffefe;
-  }
-  body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.img {
-    padding: 0.15rem;
   }
   body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details {
     text-align: left;
