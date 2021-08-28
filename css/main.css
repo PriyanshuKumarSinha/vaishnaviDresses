@@ -237,9 +237,14 @@ body div.offersSlider div.sliderButtons button:focus {
   background-color: #b8b8b8;
 }
 
+body div.content div.contentSliderContainer {
+  background-color: #ececec;
+  padding: 1.2rem 0;
+}
+
 body div.content div.contentSliderContainer img {
-  width: 12rem;
-  height: 15rem;
+  width: 15rem;
+  height: 20rem;
 }
 
 body div.content div.contentSliderContainer div.mainSlider {
@@ -277,6 +282,49 @@ body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul 
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul li:last-child {
   padding-right: 50px;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.product {
+  background-color: #f7f7f7;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.img {
+  padding: 0.15rem;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details {
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.2rem;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productName {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 700;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.about div.productDesv {
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.discountedPrice {
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 500;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.originalPrice {
+  font-size: 0.8rem;
+  color: #adacac;
+}
+
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price div.percentageOff,
+body div.content div.contentSliderContainer div.mainSlider div.contentSlider ul div.details div.price span.percentageOff {
+  font-size: 0.75rem;
+  color: #e45b5b;
 }
 
 body div.content div.contentSliderContainer div.mainSlider div.contentSlider::-webkit-scrollbar {

@@ -199,9 +199,11 @@ body {
   }
   div.content {
     div.contentSliderContainer {
+      background-color: rgb(236, 236, 236);
+      padding: 1.2rem 0;
       img {
-        width: 12rem;
-        height: 15rem;
+        width: 15rem;
+        height: 20rem;
       }
       div.mainSlider {
         width: 100%;
@@ -228,6 +230,45 @@ body {
             }
             li:last-child {
               padding-right: 50px;
+            }
+            div.product {
+              background-color: rgb(247, 247, 247);
+            }
+            div.img {
+              padding: 0.15rem;
+            }
+            div.details {
+              text-align: left;
+              padding-left: 0.5rem;
+              padding-bottom: 0.5rem;
+              line-height: 1.2rem;
+              div.about {
+                div.productName {
+                  font-size: 0.8rem;
+                  color: black;
+                  font-weight: 700;
+                }
+                div.productDesv {
+                  font-size: 0.8rem;
+                  color: rgb(117, 117, 117);
+                }
+              }
+              div.price {
+                div.discountedPrice {
+                  font-size: 0.8rem;
+                  color: black;
+                  font-weight: 500;
+                }
+                div.originalPrice {
+                  font-size: 0.8rem;
+                  color: rgb(173, 172, 172);
+                }
+                div.percentageOff,
+                span.percentageOff {
+                  font-size: 0.75rem;
+                  color: rgb(228, 91, 91);
+                }
+              }
             }
           }
         }
