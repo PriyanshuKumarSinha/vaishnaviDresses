@@ -197,9 +197,12 @@ body {
       background-color: rgb(184, 184, 184);
     }
   }
+  div.dealOfTheDay {
+    background-color: rgb(236, 236, 236);
+    margin: 1.5rem 0;
+  }
   div.content {
     div.contentSliderContainer {
-      background-color: rgb(236, 236, 236);
       padding: 1.2rem 0;
       img {
         width: 15rem;

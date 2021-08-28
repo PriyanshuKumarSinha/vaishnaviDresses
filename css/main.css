@@ -237,8 +237,12 @@ body div.offersSlider div.sliderButtons button:focus {
   background-color: #b8b8b8;
 }
 
-body div.content div.contentSliderContainer {
+body div.dealOfTheDay {
   background-color: #ececec;
+  margin: 1.5rem 0;
+}
+
+body div.content div.contentSliderContainer {
   padding: 1.2rem 0;
 }
 
